@@ -1,0 +1,13 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="BadExpressionStatementJS" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptFunctionSignatures" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="ES6CheckImport" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="ES6ConvertRequireIntoImport" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="ES6ModulesDependencies" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="JSAnnotator" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="JSCheckFunctionSignatures" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="TypeScriptCheckImport" enabled="false" level="ERROR" enabled_by_default="false" />
+  </profile>
+</component>

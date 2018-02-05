@@ -1,0 +1,47 @@
+
+
+@startuml
+
+class ChatBot
+class APIAIChatBot
+class ChatBotManager
+class ChatHandler
+class ChatSocket
+
+APIAIChatBot -up-|> ChatBot
+ChatBotManager -right-* ChatBot
+ChatBotManager -left-* ChatHandler
+ChatHandler -right-* AppJs
+
+ChatSocket "0..*" -right-* ChatHandler
+SaleEmployeeSocketConnection -up-|> ChatSocket
+UserSocketConnection -up-|> ChatSocket
+
+note top of ChatHandler : Contains Chat Business logics
+note top of ChatBot : Base class for Chat bots
+note bottom of ChatBotManager: single entry point for \ncommunication with chat bots
+note right of ChatSocket: Representation for socket connection to chat\n can be user, sale employee, supervisor
+
+class ChatBot{
+sendRequestToAgent()
+}
+class APIAIChatBot{
+sendRequestToAgent()
+}
+class ChatBotManager{
+setChatBot()
+sendRequestToAgent()
+}
+class ChatSocket{
+emit()
+onInput()
+}
+class SaleEmployeeSocketConnection{
+setAvailability()
+}
+class UserSocketConnection{
+setMode()
+}
+
+
+@enduml

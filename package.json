@@ -1,0 +1,10 @@
+{
+  "name": "brontech-shopping-chatbot",
+  "version": "0.0.1",
+  "dependencies": {
+    "apiai": "^4.0.2",
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3",
+    "wait-until": "0.0.2"
+  }
+}
