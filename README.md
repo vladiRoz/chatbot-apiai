@@ -8,7 +8,7 @@ General notes
 -------------
 
 Server:
--------
+_______
 * node.js, express.js, socket.io
 
 if bot can't find suitible answer it will automatically redirect to sale employee if he is availble.
